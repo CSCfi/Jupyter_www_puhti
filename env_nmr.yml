@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.8
+  - jupyterlab
+  - numpy
+  - matplotlib
+  - mdanalysis
+  - pyyaml
+  - scipy
+  - pandas
+  - seaborn
