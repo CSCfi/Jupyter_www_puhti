@@ -77,7 +77,7 @@ The two files needed for setting up the course modules are:
    - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
    - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
-For this NMRLipids course, the above-mentioned two files are created  in the git repository. so just modify them appropriately for your own course and place them in projappl folder as below:
+For this NMRLipids course, the above-mentioned two files are created  in the git repository. so just modify them appropriately for your own course and place them in www_puhti_modules folder as below:
 
 ```bash
 
