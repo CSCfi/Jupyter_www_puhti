@@ -5,13 +5,13 @@ needed for course preparation. A custom Jupyter notebook to meet the needs of yo
 be provisioned at CSC through [Puhti web interface](https://www.puhti.csc.fi). Here are a few minimal instructions
 for setting up the notebooks on Puhti supercomputer:
 
-- [Get student accounts and resources for course ](#get-student-accounts-and-resources-for-course) 
-- [Install necessary computing environment to *projappl* directory using *tykky* wrapper tool](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
-- [Creating a course environment/module(s) in Puhti](#creating-a-course-environment-modules-in-puhti)
+- [Getting student accounts and resources for course ](#get-student-accounts-and-resources-for-course) 
+- [Installing necessary computing environment to *projappl* directory using *tykky* wrapper tool](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
+- [Creating a course environment/module in Puhti](#creating-a-course-environment-module-in-puhti)
 - [Accessing notebook *via* Puhti web interface](#accessing-notebook-via-puhti-web-interface)
 - [Useful CSC documentation](useful-CSC-documentation)
 
-### Get student accounts and resources for course 
+### Getting student accounts and resources for course 
 
 One needs to have access to Puhti to use Puhti web interface. As a course organiser, you have 
 to make sure that all course participants have access to Puhti usage well before your course starts. 
@@ -29,7 +29,7 @@ resources for your course, we recommend requesting CSC for these resources in Pu
 
 >CSC supercomputers have [planned scheduled service breaks](https://research.csc.fi/service-breaks) so please make sure that your course days don't overlap with the service breaks of Puhti.
 
-### Install necessary computing environment to *projappl* directory using *tykky* wrapper tool
+### Installing necessary computing environment to *projappl* directory using *tykky* wrapper tool
 
 Tykky wraps installations of software tools/packages inside of a container image for improved performance metrics 
 such as faster startup times, reduced I/O load, and fewer number of file creations on Lustre parallel filesystems. 
@@ -69,7 +69,7 @@ Tykky would install all needed packages (as listed in the file, *env_nmr.yml*) t
 Please note that you have to provide absolute path of **bin** directory  (which exists inside the folder of /projappl/project_xxxx/NMRLipids) in the .lua file
 
 
-### Creating a course environment modules in Puhti
+### Creating a course environment module in Puhti
 
 The files for course environments (modules) can be created in the directory /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
 
@@ -97,9 +97,9 @@ mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course-resources.
 <img src="./Puhti_login.png" width="80%">
 
 3. Once login is successful, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". 
- On the right-hand side you can see the different fields for selection before launching a job.  For this course, select 
- the "Project" and "Working directory corresponding"  to course project. Then you will be able to see "NMRLipids-course" 
- module under the "Course module" field. You can then launch Jupyter notebook whick will be launched in the 
+ On the right-hand side you can see the different fields for selection before launching a job. For this course, select 
+ the "Project" and "Working directory corresponding" to course project. Then you will be able to see "NMRLipids-course" 
+ module under the "Course module" field. You can then launch Jupyter notebook which will be launched in the 
  interaction partition by default. You can also change the default settings by checking "Show custom resource settings".
 
 4. Upon successful launching a job, you can click on "connect to Jupyter" to see the course notebook corresponding to 
