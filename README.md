@@ -24,7 +24,7 @@ resources for your course, we recommend requesting these resources in Puhti well
 
 > note:
 
-CSC supercomputers have [planned scheduled service breaks](https://research.csc.fi/service-breaks) so please make sure that your course days don't overlap with service breaks of Puhti.
+>CSC supercomputers have [planned scheduled service breaks](https://research.csc.fi/service-breaks) so please make sure that your course days don't overlap >with service breaks of Puhti.
 
 ### Install necessary computing environment to *projappl* directory using *tykky* wrapper tool
 
