@@ -51,8 +51,8 @@ cd /scartch/project_xxxx/      # Make sure to replace the correct project number
 # launched. Inside  of the .lua file, you can set the absolute path for bin directory (where you would 
 # have installed all the python packages using tykky),configure path for notebook URL (The notebook that
 # you would like to see when you launch Jupyter notebook) and  optional source path for extra material 
-# (download extra matrial on scratch and refer to the link here so that the material will
-# be copied to Jupyter notebook directory when Launched).
+# (downloaded extra matrial on scratch and refer to the link here so that the material will
+# be copied to Jupyter notebook directory when launched).
 
 git clone https://github.com/CSCfi/Puhti_gui_tutorial.git
 
