@@ -5,8 +5,8 @@ needed for course preparation. A custom Jupyter notebook to meet the needs of yo
 be provisioned at CSC through [Puhti web interface](https://www.puhti.csc.fi). Here are a few minimal instructions
 for setting up the notebooks on Puhti supercomputer:
 
-- [Getting student accounts and resources for course ](#get-student-accounts-and-resources-for-course) 
-- [Installing necessary computing environment to *projappl* directory using *tykky* wrapper tool](#installing-necessary-python-packages-to-projappl-directory-using-tykky)
+- [Getting student accounts and resources for course](#getting-student-accounts-and-resources-for-course) 
+- [Installing necessary computing environment to *projappl* directory using *tykky* wrapper tool](#installing-necessary-computing-environment-to-projappl- directory-using-tykky-wrapper-tool)
 - [Creating a course environment/module in Puhti](#creating-a-course-environment-module-in-puhti)
 - [Accessing notebook *via* Puhti web interface](#accessing-notebook-via-puhti-web-interface)
 - [Useful CSC documentation](useful-CSC-documentation)
