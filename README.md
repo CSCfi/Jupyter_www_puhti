@@ -37,7 +37,7 @@ Please refer to CSC documentation on [tykky](https://docs.csc.fi/computing/conta
 
 For the installation of computational environment required for your course, use tykky container wrapper tool to install
 all needed computing environment in the *projappl* directory. For the purpose of this tutorial, we use [NMRLipids course](https://www.helsinki.fi/en/researchgroups/biophysical-chemistry/nmrlipids-summer-school-2022) set up which needs installation
-of several [python packages](#link) for Jupyter notebook as well as the availability of course material downloaded from the Github.
+of several [python packages](https://raw.githubusercontent.com/CSCfi/Puhti_gui_tutorial/master/env_nmr.yml) for Jupyter notebook as well as the availability of course material downloaded from the Github.
 
 Install python packages for course using tykky as below:
 ```bash
