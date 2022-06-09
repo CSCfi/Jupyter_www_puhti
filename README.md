@@ -17,7 +17,7 @@ You can request course accounts for participants *via* CSC [Helpdesk](https://do
 Accounts are part of the default project which can be used for course. Please note that all installations for your course 
 exercises *via* Jupyter notebook should be done in the same default project. However, it is recommended to create 
 a separate project for your course in [myCSC web protal](https://my.csc.fi/welcome) if your participants plan to use their own CSC accounts 
-for your course. Once you create a project you can add course participants to the project in myCSC. 
+for your course and/or it is a reccuring course. Once you create a project you can add course participants to the project in myCSC. 
 
 If you are going to use Puhti for heavy computational exercises and require reservation of computing 
 resources for your course, we recommend requesting these resources in Puhti well in advance. 
