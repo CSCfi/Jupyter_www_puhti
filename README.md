@@ -23,7 +23,7 @@ plan to use their own CSC accounts for your course and/or it is a recurring cour
 add course participants to the project in myCSC. 
 
 If you are going to use Puhti for heavy computational exercises and require reservation of computing 
-resources for your course, we recommend requesting these resources in Puhti well in advance. 
+resources for your course, we recommend requesting CSC for these resources in Puhti well in advance. 
 
 > note:
 
@@ -37,7 +37,7 @@ Please refer to CSC documentation on [tykky](https://docs.csc.fi/computing/conta
 
 For the installation of computational environment required for your course, use tykky container wrapper tool to install
 all needed computing environment in the *projappl* directory. For the purpose of this tutorial, we use [NMRLipids course](https://www.helsinki.fi/en/researchgroups/biophysical-chemistry/nmrlipids-summer-school-2022) set up which needs installation
-of several [python packages](https://raw.githubusercontent.com/CSCfi/Puhti_gui_tutorial/master/env_nmr.yml) for Jupyter notebook as well as the availability of course material downloaded from the Github.
+of several [python packages](https://raw.githubusercontent.com/CSCfi/Puhti_gui_tutorial/master/env_nmr.yml) for Jupyter notebook as well as the availability of course material downloaded from the GitHub.
 
 Install python packages for course using tykky as below:
 ```bash
@@ -51,8 +51,8 @@ cd /scartch/project_xxxx/      # Make sure to replace the correct project number
 # launched. Inside  of the .lua file, you can set the absolute path for bin directory (where you would 
 # have installed all the python packages using tykky),configure path for notebook URL (The notebook that
 # you would like to see when you launch Jupyter notebook) and  optional source path for extra material 
-# (downloaded extra matrial on scratch and refer to the link here so that the material will
-# be copied to Jupyter notebook directory when launched).
+# (source path is where you download extra matrial on scratch area and refer to the path so that the material will
+# be copied to Jupyter notebook directory upon launching notebook).
 
 git clone https://github.com/CSCfi/Puhti_gui_tutorial.git
 
@@ -77,14 +77,14 @@ The two files needed for setting up the course modules are:
    - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
    - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
   
-For this NMRLipids course, the above-mentioned two files are created  in the git repository. so just modify them appropriately for your own course and place them in www_puhti_modules folder as below:
+In this NMRLipids course example, the above-mentioned two files (NMRLipids-course-resources.yml and NMRLipids-course.lua) are created  in the git repository. so just modify them appropriately for your course and place them in www_puhti_modules folder as below:
 
 ```bash
 
-# Edit the correct project number (in two places in NMRLipids-course.lua file) in the the copied files in
+# Make sure to correct project number (in two places in NMRLipids-course.lua file) in the the copied files in
 # /projappl/project_xxxx/www_puhti_modules.
 
-mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course* /projappl/project_xxxx/www_puhti_modules
+mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course-resources.yml NMRLipids-course.lua /projappl/project_xxxx/www_puhti_modules
 
 ```
 
