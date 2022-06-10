@@ -15,12 +15,14 @@ for setting up the notebooks on Puhti supercomputer:
 
 One needs to have access to Puhti to use Puhti web interface. As a course organiser, you have 
 to make sure that all course participants have access to Puhti usage well before your course starts. 
-You can request course accounts for participants *via* CSC [Helpdesk](https://docs.csc.fi/support/contact/).
-Accounts are part of the default project which can be used for course. Please note that all installations for 
-your course exercises *via* Jupyter notebook should be done in the same default project. However, it is recommended 
-to create a separate project for your course in [myCSC web protal](https://my.csc.fi/welcome) if your participants
-plan to use their own CSC accounts for your course and/or it is a recurring course. Once you create a project you can 
-add course participants to the project in myCSC. 
+Please read the instructions on [getting student accounts for courses](https://docs.csc.fi/accounts/how-to-create-new-user-account/#getting-student-accounts-for-courses). Accounts are part of the default project 
+which can be used for course. Please note that all installations for 
+your course exercises *via* Jupyter notebook should be done in the same default project. It is recommended 
+to create a course project for your course in [myCSC web protal](https://my.csc.fi/welcome) especially if 
+your participants plan to use their own CSC accounts for your course and/or it is a recurring course. 
+Once you have a course project you can add course participants to the project in myCSC. As of writing this page,
+CSC supports course accounts (= temporary accounts for courses) with default project but this process process will 
+be stopped in near future. The course project-based approach will be the way to go. 
 
 If you are going to use Puhti for heavy computational exercises and require reservation of computing 
 resources for your course, we recommend requesting CSC for these resources in Puhti well in advance. 
