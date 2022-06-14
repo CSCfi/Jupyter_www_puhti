@@ -44,7 +44,7 @@ of several [python packages](https://raw.githubusercontent.com/CSCfi/Puhti_gui_t
 Install python packages for course using tykky as below:
 ```bash
 # Navigate to the scratch area of your course project 
-cd /scartch/project_xxxx/      # Make sure to replace the correct project number here
+cd /scratch/project_xxxx/      # Make sure to replace the correct project number here
 
 # As a starting point, you can clone the current repository that has all necessary scripts/files for the 
 # customising your own course environment. The file NMRLipids-course.lua (i.e., coursename.lua) is a module 
@@ -67,19 +67,19 @@ mkdir /projappl/project_xxxx/NMRLipids  (e.g., /projappl/project_xxxx/coursename
 # You can write all needed python packages in yaml as in env_nmr.yml for NMRLpids course and install with tykky
 conda-containerize new --prefix /projappl/project_xxxx/NMRLipids  env_nmr.yml  #  Installation can take a while
 ```
-Tykky would install all needed packages (as listed in the file, *env_nmr.yml*) to the directory '/projappl/project_xxxx/NMRLipids'. 
-Please note that you have to provide absolute path of **bin** directory  (which exists inside the folder of /projappl/project_xxxx/NMRLipids) in the .lua file
+Tykky would install all needed packages (as listed in the file, *env_nmr.yml*) to the directory `/projappl/project_xxxx/NMRLipids`. 
+Please note that you have to provide absolute path of **bin** directory  (which exists inside the folder of `/projappl/project_xxxx/NMRLipids`) in the .lua file
 
 
 ### Creating a course environment module in Puhti
 
-The files for course environments (modules) can be created in the directory /projappl/project_xxxx/www_puhti_modules/. The www_puhti_modules directory can be created if it does not exist.
+The files for course environments (modules) can be created in the directory `/projappl/project_xxxx/www_puhti_modules/`. The `www_puhti_modules` directory can be created if it does not exist.
 
 The two files needed for setting up the course modules are:
-   - a <<course_name>>.lua file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
-   - a <<course_name>>-resources.yml that defines the default resources used for Jupyter.
+   - a `<<course_name>>.lua` file that defines the module that sets up the Python environment. Only files containing the text Jupyter will be visible in the app.
+   - a `<<course_name>>-resources.yml` that defines the default resources used for Jupyter.
   
-In this NMRLipids course example, the above-mentioned two files (NMRLipids-course-resources.yml and NMRLipids-course.lua) are created  in the git repository. so just modify them appropriately for your course and place them in www_puhti_modules folder as below:
+In this NMRLipids course example, the above-mentioned two files (`NMRLipids-course-resources.yml` and `NMRLipids-course.lua`) are created  in the git repository. so just modify them appropriately for your course and place them in `www_puhti_modules` folder as below:
 
 ```bash
 
@@ -94,17 +94,17 @@ mkdir /projappl/project_xxxx/www_puhti_modules && cp NMRLipids-course-resources.
 
 1. Log in to [Puhti web interface](https://www.puhti.csc.fi/public/login.html)
 2. Login with CSC or course credentials (Users should have accepted Puhti service in [myCSC](https://my.csc.fi/welcome) 
-   page under a course ( or own) project before using this service). Log in page is as shown below:
+   page under a course (or own) project before using this service). Log in page is as shown below:
 
 <img src="./Puhti_login.png" width="80%">
 
 3. Once login is successful, select "Interactive Sessions" on the top menu bar and then click "Jupyter for courses". 
  On the right-hand side you can see the different fields for selection before launching a job. For this course, select 
- the "Project" and "Working directory corresponding" to course project. Then you will be able to see "NMRLipids-course" 
+ the "Project" and "Working directory" corresponding to course project. Then you will be able to see "NMRLipids-course" 
  module under the "Course module" field. You can then launch Jupyter notebook which will be launched in the 
  interaction partition by default. You can also change the default settings by checking "Show custom resource settings".
 
-4. Upon successful launching a job, you can click on "connect to Jupyter" to see the course notebook corresponding to 
+4. Upon successful launching a job, you can click on "Connect to Jupyter" to see the course notebook corresponding to 
   your course environment (NMRLipids_course in this case).
 
 
